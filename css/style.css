@@ -1,0 +1,49 @@
+#hello_image{
+
+   position: absolute; //расположение изображения от верхнего левого угла
+  top: 25%; // отступ сверху
+  left: 50%; // отступ слева
+  transform: translate(-50%, -50%); // перемещение на середину
+
+ -webkit-filter: drop-shadow(5px 5px 5px #4682B4); // тень для пнг рисунка
+  filter: drop-shadow(5px 5px 5px #4682B4);
+}
+
+body{
+background-color: rgba(180, 200, 260, 0.5); // цвет фона в системе RBG, 0.5 - прозрачность
+}
+
+.container {
+text-align: center;
+color: white;
+text-shadow: 0 0 3px#FF0000, 0 0 5px#0000FF;
+}
+
+.centered {
+position: absolute;
+top: 33%;
+left: 50%;
+transform: translate(-50%, 50%);
+}
+#demo {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ font-family: "Sofia", sans-serif;
+font-size: 30px;
+color: blue;
+}
+
+.rotate {
+  animation: rotation 18s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
